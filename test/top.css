@@ -1,0 +1,30 @@
+.quest_area{
+    width: 70%;
+    margin: 5px;
+    border:solid 1px #000
+}
+
+.inbox{
+    text-align: center;
+}
+
+.box_area{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 2%;
+}
+
+.quest_pass_btn{
+    float: right;
+}
+.skip_count_txt{
+    border:1px solid #000;
+    background-color: #999;
+    margin-right: 0;
+    margin-bottom: 20%;
+    float: right;
+    display: block;
+}
+.skip_count{
+    float: right;
+}

@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  /*スクロールバーをけす*/
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(173, 221, 40);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(47, 0, 255);
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*クエストウォーカータイトル*/
+.title {
+  padding: 2vw;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+.title img {
+  height: auto;
+  width: 40%;
+}
+
+/*ログイン・新規登録総合*/
+.titlepage ul {
+  padding: 0vw;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+/*ログインボタン*/
+.login {
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  height: 40px;
+  padding: 8px 40px;
+  font-family: sans-serif;
+  overflow-wrap: anywhere;
+  border: solid;
+  border-width: thick;
+  border-color: purple;
+  background-color: rgba(0, 0, 255, 0.089);
+  font-size: 1vw;
+  display: inline-block;
+  margin: 0 50px;
+  list-style: none;
+}
+
+.login:hover {
+  background: violet;
+}
+
+/*新規登録ボタン*/
+.sign {
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  height: 40px;
+  padding: 8px 40px;
+  font-family: sans-serif;
+  overflow-wrap: anywhere;
+  border: solid;
+  border-width: thick;
+  border-color: red;
+  font-size: 1vw;
+  display: inline-block;
+  margin: 0 50px;
+  list-style: none;
+}
+
+.sign:hover {
+  background: #ea5532;
+}
+
+/*タブパネル*/
+/*タブを横並びに*/
+.tab-label-heading:not(:last-of-type) .tab-label {
+  margin-right: 2px !important;
+}
+
+.tab-label{
+  width: calc(80%/3);    /*80%/3に変更*/
+  padding:10px 0;
+  border-bottom: 3px solid #37beb0 ;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  margin-top:50px;
+}
+
+#a-tab, #b-tab, #c-tab{
+  position: absolute;
+ 
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+#a-tab{
+  position: absolute;
+
+  left: 23%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}#c-tab{
+  position: absolute;
+
+  left: 77%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+}
+
+/*追加したいかも（キャラクターの歴史）
+.chara{
+    display:flex;
+    flex-flow: column;
+}
+
+.chara img{
+    width:100px;
+    height:100px;
+    margin-right: 10px;
+}
+*/
+
+/*ラジオボタンを全て非表示に*/
+input[name="tab-radio"] {
+  display: none;
+}
+
+/* 選択されたタブの見た目 */
+input:checked+h2>.tab-label {
+  color: #FFFFFF !important;
+  background-color: #80A6CF !important;
+  transition: .3s;
+
+}
+
+.tab-label:hover {
+  opacity: .7 !important;
+  color: #000000 !important;
+  background-color: #D4E5EF !important;
+  transition: .3s;
+}
+
+.tab-panel {
+  color: #000000 !important;
+  background-color: #E1F5FE;
+  border: solid;
+  border-width: thick;
+  border-color: black;
+  font-size: 150%;
+  width: 80%;
+  max-height: 40vh;
+  margin: 120px auto;
+  clear: both;
+  overflow:auto;
+  display: none;
+  /*パネルを非表示*/
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /*縦スクロールバーのみにする*/
+}
+
+/* 選択されているチェックボックスに応じてパネルを表示 */
+#a-tab:checked~.panel-a,
+#b-tab:checked~.panel-b,
+#c-tab:checked~.panel-c {
+  display: block;
+}
+
+/*選択した画面を開く処理*/
+.tab-panel>div {
+  display: flex;
+  height: 100%;
+  align-items: auto;
+  justify-content: auto;
+}
+
+
+/*以下、②左側のコメント*/
+.balloon6 {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.balloon6 .faceicon {
+
+  margin-right: -50px;
+  width: 40px;
+  text-align: center;
+}
+
+.balloon6 .faceicon img {
+  width: 150%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.faceicon p {
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap;
+  /* テキストが折り返されないようにする */
+}
+
+.balloon6 .chatting {
+  width: 0%;
+  text-align: left;
+}
+
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 90px;
+  padding: 10px;
+  width: max-content;
+  /* 文字幅に合わせる */
+  border-radius: 12px;
+  background: #edf1ee;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  transform: rotate(35deg);
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+  margin: 10px 0;
+  float: right;
+}
+
+.mycomment p {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 8px;
+  width: max-content;
+  /* 文字幅に合わせる */
+  border-radius: 12px;
+  background: #30e852;
+  font-size: 20px;
+}
+
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -17px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}

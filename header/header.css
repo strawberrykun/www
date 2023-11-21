@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  height: 80px;
+}
+html{
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #f0f8ff;
+  overflow: hidden;
+}
+
+
+header {
+  height: 80px;
+  width: 100%;
+  padding: 0px 15px;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  line-height: 0px;
+  padding: 35px 20px;
+}
+
+
+.head_img{
+  margin-top: -25px;
+  text-align: left;
+  width: 130px;
+  height : auto;
+}
+
+.scroll{
+  white-space: nowrap; /* マーキー内のテキストを折り返さないようにする */
+  overflow: hidden; /* マーキー内のテキストを表示領域内に収める */
+  position: absolute;
+  top: 115%; /* 画面上部から中央に配置 */
+  left: 0px;
+  height:30%;
+  background-color: aliceblue;
+  transform: translateY(-50%); /* 上下中央に配置 */
+}

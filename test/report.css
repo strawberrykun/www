@@ -1,0 +1,28 @@
+nav{
+    display: none;
+}
+
+.nav-open{
+    padding: 15px;
+	color: #fff;
+	font-size: 20px;
+	background: #2073c8;
+	position: relative;
+}
+
+.nav-open::before{
+    /*close*/
+    content: "▼";
+    position: absolute;
+    right: 20pt;
+}
+
+.nav-open.active::before{
+    content: "▲";
+}
+
+ul{
+    list-style: none;
+    padding-left: 3%;
+    background-color: bisque;
+}

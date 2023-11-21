@@ -1,0 +1,68 @@
+.hp{
+    filter: invert(17%) sepia(91%) saturate(7085%) hue-rotate(128deg) brightness(100%) contrast(106%);
+}
+
+.power{
+    filter: invert(15%) sepia(95%) saturate(6932%) hue-rotate(358deg) brightness(95%) contrast(112%);
+}
+
+.fast{
+    filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg) brightness(100%) contrast(145%);
+}
+
+.know{
+    filter: invert(11%) sepia(71%) saturate(5170%) hue-rotate(293deg) brightness(87%) contrast(111%);
+}
+
+
+
+.success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    height: 64px;
+    padding: 8px 24px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #f14646;
+    border-radius: 32px;
+    /* (buttonの高さ / 2) の値 */
+
+}
+
+.forgo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    height: 64px;
+    padding: 8px 24px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #f14646;
+    border-radius: 32px;
+    /* (buttonの高さ / 2) の値 */
+
+}
+
+/* タイマーのテキストに対するスタイル */
+.timer {
+    font-size: 90px; /* フォントサイズを変更 */
+    font-weight: bold; /* 太字にする場合 */
+    text-align: center; /* テキストを中央揃えにする場合 */
+    color: #000000;
+}
+
+.word-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* 一部のブラウザのためのプレフィックス */
+}
